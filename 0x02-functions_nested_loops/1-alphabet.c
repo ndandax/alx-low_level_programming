@@ -7,11 +7,11 @@
  */
 void print_albhabet(void)
 {
-	int a;
+	int b;
 
-	for (a = 'a'; a <= 'z'; a++)
+	for (b = 'a'; b <= 'z'; b++)
 	{
-		_putchar(a);
+		_putchar(b);
 	}
 
 	_putchar('\n');
