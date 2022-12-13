@@ -9,7 +9,7 @@ void print_albhabet(void)
 {
 	int a;
 
-	for (a = "a"; a <= "z"; a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
 		_putchar(a);
 	}
