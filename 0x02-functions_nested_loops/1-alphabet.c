@@ -5,7 +5,7 @@
  *
  *Return: 0
  */
-void print_albhabet(void)
+void print_alphabet(void)
 {
 	int b;
 
