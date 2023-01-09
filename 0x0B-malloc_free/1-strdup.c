@@ -18,22 +18,20 @@ char *_strdup(char *str)
 	}
 	++len;
 
-	char *result;
-	result = malloc(len);
+	char* result = malloc(len);
 
 	if (result == NULL)
 		return (NULL);
-	char *y;
-	*y = result;
+	char *y = result;
 
 	p = str;
 	while (*p != '\0')
 	{
-		*q = *str;
-		++q;
+		*y = *str;
+		++y;
 		++p;
 	}
-	*q = '\0';
+	*y = '\0';
 	free(result);
 
 	return (result);
