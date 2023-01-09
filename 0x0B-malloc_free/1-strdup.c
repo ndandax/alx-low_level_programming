@@ -9,6 +9,9 @@ char *_strdup(char *str)
 {
 	unsigned int len = 0;
 	char *p = str;
+	char* result = malloc(len);
+	char *y = result;
+
 
 
 	while (*p != '\0')
@@ -18,11 +21,11 @@ char *_strdup(char *str)
 	}
 	++len;
 
-	char* result = malloc(len);
+
 
 	if (result == NULL)
 		return (NULL);
-	char *y = result;
+
 
 	p = str;
 	while (*p != '\0')
