@@ -23,13 +23,13 @@ char *_strdup(char *str)
 
 	if (result == NULL)
 		return (NULL);
-	char *y:
+	char *y;
 	*y = result;
 
 	p = str;
 	while (*p != '\0')
 	{
-		*q = *s;
+		*q = *str;
 		++q;
 		++p;
 	}
