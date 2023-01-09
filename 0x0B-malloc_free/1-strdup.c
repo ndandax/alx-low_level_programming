@@ -1,3 +1,5 @@
+#include "main.h"
+#include <stdlib.h>
 /**
  *_strdup - Entry point
  *@str: string
@@ -7,6 +9,7 @@ char *_strdup(char *str)
 {
 	unsigned int len = 0;
 	char *p = str;
+	char *y = result;
 
 	while (*p != '\0')
 	{
@@ -19,8 +22,6 @@ char *_strdup(char *str)
 
 	if (result == NULL)
 		return (NULL);
-
-	char *y = result;
 
 	p = s;
 	while (*p != '\0')
