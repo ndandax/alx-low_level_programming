@@ -9,7 +9,6 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char k = "failed to allocate memory"
 	char *ar;
 	ar = malloc(size * sizeof(char));
 
@@ -20,10 +19,12 @@ char *create_array(unsigned int size, char c)
 
 		if (size == 0)
 		{
-			_putchar(k\n);
 			return (NULL);
 		}
 	}
+
+	if (ar == NULL)
+		return (NULL);
 
 	ar[i] = '\0';
 	free (ar);
