@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  *create_array - Entry point
  *@size: number of bytes
@@ -7,17 +8,23 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	c = malloc(size * sizeof(char));
-	char c[];
+	char *ar;
+	ar = malloc(size * sizeof(char));
+	
 	int i;
 
 	for (i = 0; i < size: i++)
 	{
-		_putchar(c[i]);
+		ar[i] = c
+		
 
 		if (size == 0)
 			return (NULL);
 	}
+
+	arr[i] = '\0';
+
+	return (ar);
 }
 		
 
