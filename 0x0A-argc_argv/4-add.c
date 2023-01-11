@@ -9,16 +9,30 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, n, sum = 0;
+	char *flag;
+
 	if (argc < 2)
 	{
 		printf("0\n");
-	}
-	if (!isdigit(argv[1]) || !isdigit(argv[2]))
-	{
-		printf("Error\n");
-		return (1);
+		return (0);
 	}
 
-	printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+
+		else
+		{
+			sum += n;
+		}
+	}
+	printf("%d\n", sum);
+
 	return (0);
 }
