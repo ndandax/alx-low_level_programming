@@ -1,7 +1,7 @@
 #define DOG_H
 
 
-typedef sruct dog;
+typedef sruct dog dog;
 
 struct dog
 {
