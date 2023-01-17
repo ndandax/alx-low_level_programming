@@ -6,4 +6,6 @@
 int main(void)
 {
 	printf("%s\n", __LINE__);
+
+	return (0);
 }
