@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *print_list - Function name
- *@h - parameter
+ *@h: - parameter
  *Return: 0
  */
 
